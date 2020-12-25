@@ -14,8 +14,6 @@ import {
     CardBody, Breadcrumb, BreadcrumbItem,
 } from "reactstrap";
 
-//Import components
-import PageBreadcrumb from "../../../components/Shared/PageBreadcrumb";
 
 //Import Icons
 import FeatherIcon from "feather-icons-react";

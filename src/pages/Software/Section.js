@@ -27,7 +27,7 @@ class Section extends Component {
     return (
       <React.Fragment>
         <section
-          className="bg-half-260 bg-primary d-table w-100"
+          className="bg-half-260 bg-primary d-table w-100 mb-5"
           style={{ background: `url(${bgimg}) center center` }}
         >
           <div className="bg-overlay"></div>
@@ -39,16 +39,15 @@ class Section extends Component {
               <Col lg="6" md="12">
                 <div className="title-heading mt-4 text-center text-lg-left">
                   <h1 className="heading mb-3 title-dark text-white">
-                    Best Software For Your Work Monitor
+                    Разработка на заказ
                   </h1>
                   <p className="para-desc text-white-50">
-                    Launch your campaign and benefit from our expertise on
-                    designing and managing conversion centered bootstrap4 html
-                    page.
+                    Конечная цель любого программного обеспечения –
+                    автоматизация бизнес-процессов, создание имиджа компании,  увеличение прибыли бизнеса за счет популярности продукта в  интернете.
                   </p>
                   <div className="mt-4">
                     <Link to="" className="btn btn-light">
-                      <i className="mdi mdi-download"></i> Download Now
+                      <i className="mdi mdi-download"></i> Contact now
                     </Link>
                   </div>
                 </div>

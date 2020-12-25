@@ -485,7 +485,7 @@ class Topbar extends Component {
                       target="_blank"
                       className="btn btn-pills btn-primary"
                     >
-                      Buy Now
+                      Contact Now
                     </Link>
                   </div>
                 );
@@ -499,7 +499,7 @@ class Topbar extends Component {
                       id="buyButton"
                       className="btn btn-primary"
                     >
-                      Buy Now
+                      Contact Now
                     </Link>
                   </div>
                 );
@@ -696,7 +696,7 @@ class Topbar extends Component {
                   rel="noopener noreferrer"
                   className="btn btn-primary"
                 >
-                  Buy Now
+                  Contact Now
                 </Link>
               </div>
             </div>

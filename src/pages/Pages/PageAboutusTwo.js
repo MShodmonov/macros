@@ -27,15 +27,15 @@ import paypal from "../../assets/images/client/paypal.svg";
 import shopify from "../../assets/images/client/shopify.svg";
 import spotify from "../../assets/images/client/spotify.svg";
 
-import work1 from "../../assets/images/work/7.jpg";
-import work2 from "../../assets/images/work/8.jpg";
-import work3 from "../../assets/images/work/9.jpg";
-import work4 from "../../assets/images/work/12.jpg";
+import work1 from "../../assets/images/work/1.png";
+import work2 from "../../assets/images/work/2.png";
+import work3 from "../../assets/images/work/3.png";
+import work4 from "../../assets/images/work/4.png";
 
 import SectionTitle from "../../components/Shared/SectionTitle";
 import TeamBox from "../../components/Shared/TeamBox";
-import team1 from "../../assets/images/client/01.jpg";
-import team4 from "../../assets/images/client/04.jpg";
+import team1 from "../../assets/images/client/shahobbek1.png";
+import team4 from "../../assets/images/client/Farrux_manager.jpg";
 import team2 from "../../assets/images/client/02.jpg";
 import team3 from "../../assets/images/client/03.jpg";
 
@@ -74,8 +74,8 @@ export default class PageAboutusTwo extends Component {
         {
           id: 1,
           image: team1,
-          name: "Ronny Jofra",
-          designation: "C.E.O",
+          name: "Juraev Shahobbek",
+          designation: "C.F.O",
           link: "",
           socialIds: [
             { icon: "facebook", link: "#" },
@@ -87,8 +87,8 @@ export default class PageAboutusTwo extends Component {
         {
           id: 2,
           image: team4,
-          name: "Micheal Carlo",
-          designation: "Director",
+          name: "Boltaev Farrux",
+          designation: "C.E.O",
           link: "",
           socialIds: [
             { icon: "facebook", link: "#" },
@@ -102,6 +102,19 @@ export default class PageAboutusTwo extends Component {
           image: team2,
           name: "Aliana Rosy",
           designation: "Manager",
+          link: "",
+          socialIds: [
+            { icon: "facebook", link: "#" },
+            { icon: "instagram", link: "#" },
+            { icon: "twitter", link: "#" },
+            { icon: "linkedin", link: "#" },
+          ],
+        },
+        {
+          id: 4,
+          image: team3,
+          name: "Sofia Razaq",
+          designation: "Developer",
           link: "",
           socialIds: [
             { icon: "facebook", link: "#" },

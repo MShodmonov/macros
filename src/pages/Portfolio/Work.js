@@ -7,12 +7,12 @@ import Lightbox from 'react-image-lightbox';
 import '../../../node_modules/react-image-lightbox/style.css';
 
 //Import Images
-import work1 from "../../assets/images/work/20.jpg";
-import work2 from "../../assets/images/work/13.jpg";
-import work3 from "../../assets/images/work/14.jpg";
-import work4 from "../../assets/images/work/15.jpg";
-import work5 from "../../assets/images/work/16.jpg";
-import work6 from "../../assets/images/work/17.jpg";
+import work1 from "../../assets/images/work/AllSportUz copy.jpg";
+import work2 from "../../assets/images/work/artel copy.jpg";
+import work3 from "../../assets/images/work/Intellingvo copy.jpg";
+import work4 from "../../assets/images/work/LMS copy.jpg";
+import work5 from "../../assets/images/work/mobitech copy.jpg";
+import work6 from "../../assets/images/work/SES copy.jpg";
 import work7 from "../../assets/images/work/18.jpg";
 import work8 from "../../assets/images/work/19.jpg";
 
@@ -27,14 +27,12 @@ class Work extends Component {
         super(props);
         this.state = {
             projects : [
-                { image : work1, title : "Iphone mockup", subtitle : "Branding", category : "Branding" },
-                { image : work2, title : "Mockup Collection", subtitle : "Mockup", category : "Designing" },
-                { image : work3, title : "Abstract images", subtitle : "Abstract", category : "Photography" },
-                { image : work4, title : "Yellow bg with Books", subtitle : "Company V-card", category : "Development" },
-                { image : work5, title : "Company V-card", subtitle : "V-card", category : "Branding" },
-                { image : work6, title : "Mockup box with paints", subtitle : "Photography", category : "Branding" },
-                { image : work7, title : "Coffee cup", subtitle : "Cups", category : "Designing" },
-                { image : work8, title : "Pen and article", subtitle : "Article", category : "Development" },
+                { image : work1, title : "allsportuz.com", subtitle : "Спортивный новостной сайт", category : "Branding" },
+                { image : work2, title : "Quality Device", subtitle : "Автоматизация производства с помощью программы для станков", category : "Designing" },
+                { image : work3, title : "Intelingvo.uz", subtitle : "Сайт для учёбы за границей", category : "Photography" },
+                { image : work4, title : "LMS", subtitle : "Система дистанционного обучения", category : "Development" },
+                { image : work5, title : "Mobitech_bot", subtitle : "Телеграмм бот для приёма заказов по производства штрих-кодов", category : "Телеграмм бот" },
+                { image : work6, title : "Usenap.uz", subtitle : "Государственный сайт СанЭпидем надзора", category : "Branding" },
             ],
             displayCategory: "All",
             photoIndex: 0,
