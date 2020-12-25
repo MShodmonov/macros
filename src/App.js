@@ -21,9 +21,9 @@ function withLayout(WrappedComponent) {
   return class extends React.Component {
     render() {
       return (
-        <Layout>
+        // <Layout>
           <WrappedComponent></WrappedComponent>
-        </Layout>
+        // </Layout>
       );
     }
   };
