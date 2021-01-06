@@ -12,18 +12,17 @@ import {
 import CountUp from "react-countup";
 import classnames from "classnames";
 
-//Import Icons
-import FeatherIcon from "feather-icons-react";
+
 
 //Import Images
 import logolight from "../../assets/images/logo-light.png";
 import logodark from "../../assets/images/logo-dark.png";
 import aboutus from "../../assets/images/company/aboutus.jpg";
 import about2 from "../../assets/images/company/about2.png";
-import amazon from "../../assets/images/client/amazon.svg";
-import google from "../../assets/images/client/google.svg";
-import lenovo from "../../assets/images/client/lenovo.svg";
-import paypal from "../../assets/images/client/paypal.svg";
+import amazon from "../../assets/images/client/allsport.svg";
+import google from "../../assets/images/client/moboe.svg";
+import lenovo from "../../assets/images/client/artel.svg";
+import paypal from "../../assets/images/client/talim markazi.svg";
 import shopify from "../../assets/images/client/shopify.svg";
 import spotify from "../../assets/images/client/spotify.svg";
 
@@ -38,6 +37,7 @@ import team1 from "../../assets/images/client/shahobbek1.png";
 import team4 from "../../assets/images/client/Farrux_manager.jpg";
 import team2 from "../../assets/images/client/02.jpg";
 import team3 from "../../assets/images/client/03.jpg";
+import PageHistory from "../PageHistory";
 
 export default class PageAboutusTwo extends Component {
   constructor(props) {
@@ -124,10 +124,49 @@ export default class PageAboutusTwo extends Component {
           ],
         },
         {
-          id: 4,
-          image: team3,
-          name: "Sofia Razaq",
-          designation: "Developer",
+          id: 5,
+          image: team1,
+          name: "Juraev Shahobbek",
+          designation: "C.F.O",
+          link: "",
+          socialIds: [
+            { icon: "facebook", link: "#" },
+            { icon: "instagram", link: "#" },
+            { icon: "twitter", link: "#" },
+            { icon: "linkedin", link: "#" },
+          ],
+        },
+        {
+          id: 6,
+          image: team1,
+          name: "Juraev Shahobbek",
+          designation: "C.F.O",
+          link: "",
+          socialIds: [
+            { icon: "facebook", link: "#" },
+            { icon: "instagram", link: "#" },
+            { icon: "twitter", link: "#" },
+            { icon: "linkedin", link: "#" },
+          ],
+        },
+        {
+          id: 7,
+          image: team1,
+          name: "Juraev Shahobbek",
+          designation: "C.F.O",
+          link: "",
+          socialIds: [
+            { icon: "facebook", link: "#" },
+            { icon: "instagram", link: "#" },
+            { icon: "twitter", link: "#" },
+            { icon: "linkedin", link: "#" },
+          ],
+        },
+        {
+          id: 8,
+          image: team1,
+          name: "Juraev Shahobbek",
+          designation: "C.F.O",
           link: "",
           socialIds: [
             { icon: "facebook", link: "#" },
@@ -184,29 +223,15 @@ export default class PageAboutusTwo extends Component {
             <Row className="justify-content-center">
               <Col lg={12} className="text-center">
                 <div className="page-next-level title-heading">
-                  <h1 className="text-white title-dark"> Aboutus </h1>
+                  <h1 className="text-white title-dark"> О нас </h1>
                   <p className="text-white-50 para-desc mb-0 mx-auto">
                     Start working with Landrick that can provide everything you
                     need to generate awareness, drive traffic, connect.
                   </p>
-                  <div className="page-next">
-                    <nav aria-label="breadcrumb" className="d-inline-block">
-                      <ul className="breadcrumb bg-white rounded shadow mb-0">
-                        <li className="breadcrumb-item">
-                          <Link to="/index">Landrick</Link>
-                        </li>
-                        <li className="breadcrumb-item">
-                          <Link to="#">Company</Link>
-                        </li>
-                        <li
-                          className="breadcrumb-item active"
-                          aria-current="page"
-                        >
-                          Aboutus
-                        </li>
-                      </ul>
-                    </nav>
-                  </div>
+
+                  {/*<br/>*/}
+                  {/*<br/>*/}
+                  {/*<br/>*/}
                 </div>
               </Col>
             </Row>
@@ -285,6 +310,8 @@ export default class PageAboutusTwo extends Component {
             </Row>
           </Container>
         </section>
+
+        <PageHistory />
         <section className="section bg-light">
 
           <Container className="mt-30 mt-60">
@@ -301,17 +328,6 @@ export default class PageAboutusTwo extends Component {
                     that can provide everything you need to generate awareness,
                     drive traffic, connect.
                   </p>
-                </div>
-              </Col>
-
-              <Col md={4} className="mt-4 mt-sm-0">
-                <div className="text-center text-md-right">
-                  <Link to="#" className="text-primary h6">
-                    See More{" "}
-                    <i>
-                      <FeatherIcon icon="arrow-right" className="fea icon-sm" />
-                    </i>
-                  </Link>
                 </div>
               </Col>
             </Row>
@@ -400,23 +416,6 @@ export default class PageAboutusTwo extends Component {
                       className="img-fluid rounded shadow"
                       alt=""
                     />
-                    <div className="mt-4">
-                      <p className="text-muted">
-                        This is required when, for example, the final text is
-                        not yet available. Dummy text is also known as 'fill
-                        text'. It is said that song composers of the past used
-                        dummy texts as lyrics.
-                      </p>
-                      <Link to="#" className="text-primary">
-                        See More{" "}
-                        <i>
-                          <FeatherIcon
-                            icon="arrow-right"
-                            className="fea icon-sm"
-                          />
-                        </i>
-                      </Link>
-                    </div>
                   </TabPane>
 
                   <TabPane
@@ -428,23 +427,6 @@ export default class PageAboutusTwo extends Component {
                       className="img-fluid rounded shadow"
                       alt=""
                     />
-                    <div className="mt-4">
-                      <p className="text-muted">
-                        This is required when, for example, the final text is
-                        not yet available. Dummy text is also known as 'fill
-                        text'. It is said that song composers of the past used
-                        dummy texts as lyrics.
-                      </p>
-                      <Link to="#" className="text-primary">
-                        See More{" "}
-                        <i>
-                          <FeatherIcon
-                            icon="arrow-right"
-                            className="fea icon-sm"
-                          />
-                        </i>
-                      </Link>
-                    </div>
                   </TabPane>
 
                   <TabPane
@@ -456,23 +438,6 @@ export default class PageAboutusTwo extends Component {
                       className="img-fluid rounded shadow"
                       alt=""
                     />
-                    <div className="mt-4">
-                      <p className="text-muted">
-                        This is required when, for example, the final text is
-                        not yet available. Dummy text is also known as 'fill
-                        text'. It is said that song composers of the past used
-                        dummy texts as lyrics.
-                      </p>
-                      <Link to="#" className="text-primary">
-                        See More{" "}
-                        <i>
-                          <FeatherIcon
-                            icon="arrow-right"
-                            className="fea icon-sm"
-                          />
-                        </i>
-                      </Link>
-                    </div>
                   </TabPane>
 
                   <TabPane
@@ -484,23 +449,6 @@ export default class PageAboutusTwo extends Component {
                       className="img-fluid rounded shadow"
                       alt=""
                     />
-                    <div className="mt-4">
-                      <p className="text-muted">
-                        This is required when, for example, the final text is
-                        not yet available. Dummy text is also known as 'fill
-                        text'. It is said that song composers of the past used
-                        dummy texts as lyrics.
-                      </p>
-                      <Link to="#" className="text-primary">
-                        See More{" "}
-                        <i>
-                          <FeatherIcon
-                            icon="arrow-right"
-                            className="fea icon-sm"
-                          />
-                        </i>
-                      </Link>
-                    </div>
                   </TabPane>
                 </TabContent>
               </Col>
@@ -515,7 +463,7 @@ export default class PageAboutusTwo extends Component {
                 desc="that can provide everything you need to generate awareness, drive traffic, connect."
             />
 
-            <Row>
+            <Row className="justify-content-center">
               {/* teambox */}
               <TeamBox
                   candidates={this.state.candidates}

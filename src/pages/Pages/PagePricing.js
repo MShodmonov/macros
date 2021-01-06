@@ -47,45 +47,48 @@ class PagePricing extends Component {
       pricings: [
         {
           id: 1,
-          title: "Free",
-          price: 0,
-          duration: "mo",
-          buttonText: "Buy Now",
+          title: "Телеграмм бот",
+          price: "от 500 000 сум",
+          duration: "",
+          buttonText: "Заказать сейчас",
           btnLink: "",
           features: [
-            { title: "Full Access" },
-            { title: "Enhanced Security" },
-            { title: "Source Files" },
-            { title: "1 Domain Free" },
+            { title: "Техническая поддержка" },
+            { title: "Персональный менеджер" },
+            { title: "Аналитика, рекомендации по развитию" },
+            { title: "Обучение персонала" },
+            { title: "60 дней бесплатного хостинга" },
           ],
         },
         {
           id: 2,
-          title: "Starter",
-          price: 39,
-          duration: "mo",
-          buttonText: "Get Started",
+          title: "Веб-сайт",
+          price: "от 1 500 000 сум",
+          duration: "",
+          buttonText: "Заказать сейчас",
           btnLink: "",
           features: [
-            { title: "Full Access" },
-            { title: "Source Files" },
-            { title: "Free Appointments" },
-            { title: "Free Installment" },
-            { title: "Enhanced Security" },
+            { title: "Развитие сайта, доработки" },
+            { title: "Персональный менеджер" },
+            { title: "Контент поддержка" },
+            { title: "Адаптивная вёрстка" },
+            { title: "Техническая поддержка" },
+            { title: "Домен в подарок" },
           ],
         },
         {
           id: 3,
-          title: "PROFESSIONAL",
-          price: 59,
-          duration: "mo",
-          buttonText: "Try It Now",
+          title: "Приложения",
+          price: "от 3 000 000 сум",
+          duration: "",
+          buttonText: "Заказать сейчас",
           btnLink: "",
           features: [
-            { title: "Full Access" },
-            { title: "Enhanced Security" },
-            { title: "Source Files" },
-            { title: "1 Domain Free" },
+            { title: "Контент поддержка" },
+            { title: "Персональный менеджер" },
+            { title: "Техническая поддержка" },
+            { title: "Аналитика, рекомендации по развитию" },
+            { title: "хостинг на два месяца" },
           ],
         },
       ],
@@ -291,14 +294,14 @@ class PagePricing extends Component {
           <Container>
             {/* Render Section Title */}
             <SectionTitle
-              title="Pricing #1"
+              title="Прайс лист"
               desc="that can provide everything you need to generate awareness, drive traffic, connect."
             />
 
             <Row className="align-items-center">
               {/* pricing */}
               {this.state.pricings.map((pricing, key) => (
-                <Col md={4} xs={12} key={key} className="mt-4 pt-2">
+                <Col md={4} xs={12} key={key} className="mt-4 pt-2 ">
                   <Card className="pricing-rates business-rate shadow bg-light rounded text-center border-0">
                     {pricing.isActive && (
                       <div className="ribbon ribbon-right ribbon-warning overflow-hidden">
@@ -307,7 +310,7 @@ class PagePricing extends Component {
                         </span>
                       </div>
                     )}
-                    <CardBody className="py-5">
+                    <CardBody className="py-5 text-left">
                       <h6
                         className={
                           pricing.isActive
@@ -318,10 +321,9 @@ class PagePricing extends Component {
                         {pricing.title}
                       </h6>
                       <div className="d-flex justify-content-center mb-4">
-                        <span className="h4 mb-0 mt-2">$</span>
                         <span className="price h1 mb-0">{pricing.price}</span>
                         <span className="h4 align-self-end mb-1">
-                          /{pricing.duration}
+                          {pricing.duration}
                         </span>
                       </div>
 

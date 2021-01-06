@@ -3,8 +3,8 @@ import Section from "./Section";
 import Features from "./Featuress";
 
 import Reviews from "./Reviews";
-import logolight from "../../assets/images/logo-light.png";
-import logodark from "../../assets/images/logo-dark.png";
+import logolight from "../../assets/images/logo-marcos-4.png";
+import logodark from "../../assets/images/logo-marcos-20.png";
 import PageContactOne from "../Pages/Contact/PageContactOne";
 import PagePricing from "../Pages/PagePricing";
 
@@ -39,7 +39,7 @@ class Software extends Component {
       <React.Fragment>
         {/* render section */}
         <Section />
-        <section className="section pt-md-0 pt-5 mb-00">
+        <section className="section pt-md-0 pt-0 mb-00">
           {/* Features */}
           <Features />
 
@@ -49,7 +49,7 @@ class Software extends Component {
           {/* Reviews */}
           <Reviews />
 
-
+          <a name="contact"></a>
           <PageContactOne />
 
         </section>

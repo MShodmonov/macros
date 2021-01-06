@@ -11,9 +11,7 @@ import {
   DropdownToggle,
 } from "reactstrap";
 
-//Import images
-// import logodark from "../../assets/images/logo-dark.png";
-import logolight from "../../assets/images/logo-light.png";
+import logolight from "../../assets/images/logo-marcos-4.png";
 import shop1 from "../../assets/images/shop/product/s-1.jpg";
 import shop2 from "../../assets/images/shop/product/s-2.jpg";
 import shop3 from "../../assets/images/shop/product/s-3.jpg";
@@ -27,9 +25,15 @@ class Topbar extends Component {
       dropdownOpenShop: false,
       navLinks: [
         //Note : each child and nested child must have unique id
-        { id: 1, title: "Home", link: "/index-software" },
-        { id: 2, title: "Portfolio", link: "/index-portfolio" },
-        { id: 3, title: "About Us Two", link: "/page-aboutus-two" },
+        { id: 1, title: "Home", link: "/index-software",
+          isMegaMenu: true,
+          isOpenSubMenu: false, },
+        { id: 2, title: "Portfolio", link: "/index-portfolio",
+          isMegaMenu: true,
+          isOpenSubMenu: false,},
+        { id: 3, title: "About Us Two", link: "/page-aboutus-two",
+          isMegaMenu: true,
+          isOpenSubMenu: false,},
 
       ],
       wishlistModal: false,
@@ -135,7 +139,7 @@ class Topbar extends Component {
           <Container>
             <div>
               <Link className="logo" to="/index">
-                <img src={logolight} id="brandLogo" height="24" alt="" />
+                <img src={logolight} id="brandLogo" height="40px" alt="" />
               </Link>
             </div>
             {(() => {
@@ -710,7 +714,29 @@ class Topbar extends Component {
           contentClassName="rounded shadow-lg border-0 overflow-hidden"
           toggle={this.toggleWishlistModal}
         >
-
+          <ModalBody className="py-5">
+            <div className="text-center">
+              <div
+                className="icon d-flex align-items-center justify-content-center bg-soft-danger rounded-circle mx-auto"
+                style={{ height: "95px", width: "95px" }}
+              >
+                <h1 className="mb-0">
+                  <i className="uil uil-heart-break align-middle"></i>
+                </h1>
+              </div>
+              <div className="mt-4">
+                <h4>Your wishlist is empty.</h4>
+                <p className="text-muted">
+                  Create your first wishlist request...
+                </p>
+                <div className="mt-4">
+                  <Link to="#" className="btn btn-outline-primary">
+                    + Create new wishlist
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </ModalBody>
         </Modal>
       </React.Fragment>
     );

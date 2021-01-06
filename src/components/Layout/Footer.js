@@ -14,8 +14,8 @@ import visa from "../../assets/images/payments/visa.png";
 // import { FiChevronLeft } from "react-icons/fi";
 
 //Import Images
-import logolight from "../../assets/images/logo-light.png";
-import logodark from "../../assets/images/logo-dark.png";
+import logolight from "../../assets/images/marcos-logo.png";
+import logodark from "../../assets/images/marcoa-logo-dark.png";
 
 class Footer extends Component {
   constructor(props) {
@@ -56,7 +56,7 @@ class Footer extends Component {
                 <Link to="#" className="logo-footer">
                   <img
                     src={this.props.isLight ? logodark : logolight}
-                    height="24"
+                    height="30%"
                     alt=""
                   />
                 </Link>
@@ -112,7 +112,7 @@ class Footer extends Component {
                 lg="2"
                 md="4"
                 xs="12"
-                className="mt-4 mt-sm-0 pt-2 pt-sm-0"
+                className="mt-2 mt-sm-0 pt-2 pt-sm-0"
                 name="footercolumn"
               >
                 <h5
@@ -145,7 +145,7 @@ class Footer extends Component {
                 lg="3"
                 md="4"
                 xs="12"
-                className="mt-4 mt-sm-0 pt-2 pt-sm-0"
+                className="mt-2 mt-sm-0 pt-2 pt-sm-0"
                 name="footercolumn"
               >
                 <h5
@@ -178,7 +178,7 @@ class Footer extends Component {
                 lg="3"
                 md="4"
                 xs="12"
-                className="mt-4 mt-sm-0 pt-2 pt-sm-0"
+                className="mt-2 mt-sm-0 pt-2 pt-sm-0"
                 name="footercolumn"
               >
                 <h5
@@ -190,7 +190,7 @@ class Footer extends Component {
                 >
                   Newsletter
                 </h5>
-                <p className="mt-4">
+                <p className="mt-2">
                   Sign up and receive the latest tips via email.
                 </p>
                 <Form>
@@ -243,83 +243,6 @@ class Footer extends Component {
                     </Col>
                   </Row>
                 </Form>
-              </Col>
-            </Row>
-          </Container>
-        </footer>
-        <footer className="footer footer-bar">
-          <Container className="text-center">
-            <Row className="align-items-center">
-              <Col sm="6">
-                <div className="text-sm-left">
-                  <p className="mb-0">
-                    © 2020-21 Landrick. Develop by{" "}
-                    <a
-                      href="https://themesbrand.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-success"
-                    >
-                      Themesbrand
-                    </a>
-                    .
-                  </p>
-                </div>
-              </Col>
-
-              <Col sm="6" className="mt-4 mt-sm-0 pt-2 pt-sm-0">
-                <ul className="list-unstyled text-sm-right mb-0">
-                  <li className="list-inline-item mr-1">
-                    <Link to="">
-                      <img
-                        src={americanEx}
-                        className="avatar avatar-ex-sm"
-                        title="American Express"
-                        alt=""
-                      />
-                    </Link>
-                  </li>
-                  <li className="list-inline-item mr-1">
-                    <Link to="">
-                      <img
-                        src={discover}
-                        className="avatar avatar-ex-sm"
-                        title="Discover"
-                        alt=""
-                      />
-                    </Link>
-                  </li>
-                  <li className="list-inline-item mr-1">
-                    <Link to="">
-                      <img
-                        src={masterCard}
-                        className="avatar avatar-ex-sm"
-                        title="Master Card"
-                        alt=""
-                      />
-                    </Link>
-                  </li>
-                  <li className="list-inline-item mr-1">
-                    <Link to="">
-                      <img
-                        src={paypal}
-                        className="avatar avatar-ex-sm"
-                        title="Paypal"
-                        alt=""
-                      />
-                    </Link>
-                  </li>
-                  <li className="list-inline-item mr-1">
-                    <Link to="">
-                      <img
-                        src={visa}
-                        className="avatar avatar-ex-sm"
-                        title="Visa"
-                        alt=""
-                      />
-                    </Link>
-                  </li>
-                </ul>
               </Col>
             </Row>
           </Container>

@@ -4,21 +4,16 @@ import {withRouter} from "react-router-dom";
 // Scroll up button
 import ScrollUpButton from "react-scroll-up-button";
 
-//Import Switcher
-import ThemeSwitcher from "./ThemeSwitcher";
+
 
 //Import Icons
 import FeatherIcon from "feather-icons-react";
 
 // Layout Components
 const Topbar = React.lazy(() => import("./Topbar"));
-const NavbarPage = React.lazy(() =>
-    import("../../pages/Saas Onepage/NavbarPage")
-);
+
 const Footer = React.lazy(() => import("./Footer"));
-const FooterWithoutMenuLightSocialOnly = React.lazy(() =>
-    import("./FooterWithoutMenuLightSocialOnly")
-);
+
 
 const CustomDot = () => {
     return (

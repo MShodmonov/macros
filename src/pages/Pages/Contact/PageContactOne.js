@@ -11,8 +11,10 @@ import {
     Input,
     Label,
     Card,
-    CardBody, Breadcrumb, BreadcrumbItem,
+    CardBody,
 } from "reactstrap";
+
+import emailjs from "emailjs-com"
 
 
 //Import Icons
@@ -23,6 +25,7 @@ import contact from "../../../assets/images/contact.png";
 
 class PageContactOne extends Component {
     constructor(props) {
+
         super(props);
         this.state = {
             pathItems: [
@@ -41,7 +44,22 @@ class PageContactOne extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        this.setState({Contactvisible: true});
+        var form = {
+            to_name: event.target.email.value,
+            name: event.target.name.value,
+            from_name: "Marcos Soft",
+            message: "the main reason you have received the email is that recently you have filled our contact form. As soon as possible our staff will contact you. Thanks for you attention and patience"
+        }
+
+        emailjs.send("service_ucgoxm2", "template_dwnig7o",form,
+            "user_pv5rluqWnKAVWKpCgo5Dc"
+        ).then(respone => {
+            this.setState({Contactvisible: true});
+        }).catch(exception => {
+            this.setState({Contactvisible: false});
+        })
+
+
     }
 
     componentDidMount() {
@@ -75,8 +93,9 @@ class PageContactOne extends Component {
     render() {
         return (
             <React.Fragment>
+
                 {/* breadcrumb */}
-                <section className="bg-info bg-light d-table w-100 mb-0" >
+                <section className="bg-info bg-light d-table w-100 mb-0 mt-5">
                     <Container>
                         <Row className="justify-content-center">
                             <Col lg="12" className="text-center">
@@ -300,7 +319,7 @@ class PageContactOne extends Component {
                     </Container>
 
                     <Container className="m-0" fluid>
-                        <Row >
+                        <Row>
                             <Col xs={12} className="p-0 m-0">
                                 <Card className="map border-0 m-0">
                                     <CardBody className="p-0">
@@ -318,8 +337,7 @@ class PageContactOne extends Component {
                     </Container>
 
 
-
-                </section >
+                </section>
             </React.Fragment>
         );
     }

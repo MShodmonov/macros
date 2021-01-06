@@ -14,44 +14,44 @@ class Features extends Component {
       {
         id: 1,
         icon: "uil uil-edit-alt h1 text-primary",
-        title: "Seo Services",
+        title: "Веб-сайт",
         description:
-          "Nisi aenean vulputate eleifend tellus vitae eleifend enim a Aliquam aenean elementum semper.",
+          "Используйте новые способы продвижения услуг, формируйте имидж компании в онлайн-пространстве и сохраняйте лояльность постоянных клиентов, привлекая новую аудиторию.",
       },
       {
         id: 2,
         icon: "uil uil-vector-square h1 text-primary",
-        title: "Email Marketing",
+        title: "Мобильные приложения",
         description:
-          "Allegedly, a Latin scholar established the origin of the text by established compiling unusual word.",
+          "Мы готовы к серьезной проработке бизнес-логики и архитектуры системы, чтобы обеспечить одновременную работу тысяч мобильных клиентов, защититься от DDoS-атак и других уязвимостей.",
       },
       {
         id: 3,
         icon: "uil uil-file-search-alt h1 text-primary",
-        title: "Data Analysis",
+        title: "SPA приложения",
         description:
-          "It seems that only fragments of the original text remain in the Lorem Ipsum fragments texts used today.",
+          "Выходите на новый уровень коммуникации с клиентами и улучшайте бизнес-показатели.",
       },
       {
         id: 4,
         icon: "uil uil-airplay h1 text-primary",
-        title: "Digital Marketing",
+        title: "телеграмм боты",
         description:
-          "Nisi aenean vulputate eleifend tellus vitae eleifend enim a Aliquam aenean elementum semper.",
+          "Бот позволяет автоматизировать рутинные процессы в компании и быстро находить нужную информацию, что также экономит множество ресурсов.",
       },
       {
         id: 5,
         icon: "uil uil-calendar-alt h1 text-primary",
-        title: "Social Media Marketing",
+        title: "видеомонтаж",
         description:
-          "Allegedly, a Latin scholar established the origin of the text by compiling unusual established word.",
+          "Студия укомплектована такой же аппаратурой, которая используется при создании современного кино.",
       },
       {
         id: 6,
         icon: "uil uil-clock h1 text-primary",
-        title: "Link Building",
+        title: "СММ",
         description:
-          "It seems that only fragments of the original text remain in the Lorem Ipsum texts used fragments today.",
+          "Специальная стратегия продвижения — это идеальная возможность сделать так, чтобы продукт был успешным на рынке в любой отрасли.",
       },
     ],
   };
@@ -68,8 +68,8 @@ class Features extends Component {
         <Container>
           {/* Render Section Title */}
           <SectionTitle
-            title="Solutions"
-            desc="that can provide everything you need to generate awareness, drive traffic, connect."
+            title="Услуги"
+            desc="Решения, которые мы предлагаем будут крайне эффективны и результативны для вашего бизнеса."
           />
 
           {/* feature box */}
