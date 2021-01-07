@@ -9,7 +9,7 @@ import FeatherIcon from "feather-icons-react";
 import blog1 from "../assets/images/blog/1 support.jpg";
 import blog2 from "../assets/images/blog/2 support.jpg";
 import blog3 from "../assets/images/blog/3 support.jpg";
-import blog4 from "../assets/images/blog/4 support call.jpg";
+import blog4 from "../assets/images/blog/5 support call.jpg";
 
 export default class PageHistory extends Component {
 

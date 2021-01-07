@@ -59,22 +59,22 @@ class Section extends Component {
                     <img src={software} className="img-fluid d-block" alt="" />
                   </div>
                   <div className="play-icon">
-                    <Link
-                      to="#"
+                    <a
+                      to="https://www.youtube.com/watch?v=6N-rzGsvd40&t=28s"
                       className="play-btn video-play-icon"
                       onClick={this.openModal}
                     >
                       <i className="mdi mdi-play text-primary rounded-circle bg-white shadow"></i>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </Col>
             </Row>
           </Container>
           <ModalVideo
-            channel="vimeo"
+            channel="youtube"
             isOpen={this.state.isOpen}
-            videoId="287684225"
+            videoId="6N-rzGsvd40"
             onClose={() => this.setState({ isOpen: false })}
           />
         </section>

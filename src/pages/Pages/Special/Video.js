@@ -134,7 +134,7 @@ class Video extends Component {
           <YouTube
             containerClassName="home-10-vid-container"
             className="home-10-vid"
-            videoId="NoZ8S3UgDh0"
+            videoId="6N-rzGsvd40"
             opts={opts}
             onReady={this._onReady}
             style={vidStyles}

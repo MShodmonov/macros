@@ -17,12 +17,10 @@ class Section extends Component {
               <Col xs="12">
                 <div className="title-heading text-center mt-5 pt-4">
                   <h1 className="display-1 font-weight-bold mb-3">
-                    Minimal Portfolio
+                    Наши работы
                   </h1>
                   <p className="para-desc mx-auto h6">
-                    Launch your campaign and benefit from our expertise on
-                    designing and managing conversion centered bootstrap4 html
-                    page.
+                    Ниже предоставлены некоторые наши продукты. По вашему желанию мы можем передать права на ваш продукт и их больше никто не увидит.
                   </p>
                 </div>
               </Col>

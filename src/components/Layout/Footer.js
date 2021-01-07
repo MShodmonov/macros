@@ -7,7 +7,7 @@ import FeatherIcon from "feather-icons-react";
 
 //Import Images
 import logolight from "../../assets/images/marcos-logo.png";
-import logodark from "../../assets/images/logo-marcos-20.png";
+import logodark from "../../assets/images/footer-logo.png";
 
 class Footer extends Component {
   constructor(props) {
@@ -42,8 +42,8 @@ class Footer extends Component {
               >
                 <Link to="/" className="logo-footer">
                   <img
-                    src={this.props.isLight ? logodark : logolight}
-                    height="30%"
+                    src={ logolight}
+                    height="100px"
                     alt=""
                   />
                 </Link>

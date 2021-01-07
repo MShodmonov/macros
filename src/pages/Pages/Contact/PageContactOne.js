@@ -204,7 +204,7 @@ class PageContactOne extends Component {
                                                     <Col md={6}>
                                                         <FormGroup>
                                                             <Label>
-                                                                Ваше имя <span className="text-danger">*</span>
+                                                                Имя <span className="text-danger">*</span>
                                                             </Label>
                                                             <div className="position-relative">
                                                                 <i>
@@ -227,7 +227,7 @@ class PageContactOne extends Component {
                                                     <Col md={6}>
                                                         <FormGroup className="position-relative">
                                                             <Label>
-                                                                Ваш эмаил{" "}
+                                                                эмаил{" "}
                                                                 <span className="text-danger">*</span>
                                                             </Label>
                                                             <div className="position-relative">
@@ -243,14 +243,14 @@ class PageContactOne extends Component {
                                                                 id="email"
                                                                 type="email"
                                                                 className="form-control pl-5"
-                                                                placeholder="Эмаил :"
+                                                                placeholder="Email :"
                                                                 required
                                                             />
                                                         </FormGroup>
                                                     </Col>
                                                     <Col md={12}>
                                                         <FormGroup className="position-relative">
-                                                            <Label>Ваша тема</Label>
+                                                            <Label>Тема</Label>
                                                             <div className="position-relative">
                                                                 <i>
                                                                     <FeatherIcon
@@ -270,7 +270,7 @@ class PageContactOne extends Component {
                                                     </Col>
                                                     <Col md={12}>
                                                         <FormGroup className="position-relative">
-                                                            <Label>Ваше сообщение</Label>
+                                                            <Label>Cообщение</Label>
                                                             <div className="position-relative">
                                                                 <i>
                                                                     <FeatherIcon

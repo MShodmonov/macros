@@ -263,16 +263,16 @@ export default class PageAboutusTwo extends Component {
                   <div className="d-flex mb-4">
                     <span className="text-primary h1 mb-0">
                       <span className="counter-value display-1 font-weight-bold">
-                        <CountUp start={0} end={15} duration={12} />
+                        <CountUp start={0} end={5} duration={8} />
                       </span>
                       +
                     </span>
                     <span className="h6 align-self-end ml-2">
-                      Years <br /> Experience
+                      Лет  <br /> опыта
                     </span>
                   </div>
                   <div className="section-title">
-                    <h4 className="title mb-4">Who we are ?</h4>
+                    <h4 className="title mb-4">Кто мы ?</h4>
                     <p className="text-muted">
                       Занимаемся разработкой программных продуктов с 2017 года, на данный момент под управлением Marcos Soft находится 27 проектов самых разных уровней сложности. Если у Вас есть техническое задание, будем рады с ним ознакомиться и сообщить Вам оценку Вашего проекта. ТЗ можно направить вот сюда
                       <span className="text-primary font-weight-bold">
