@@ -4,11 +4,13 @@ import React, { Component } from "react";
 // Import Generic components
 import Section from "./Section";
 import Work from "./Work";
+import logodark from "../../assets/images/logo-marcos-20.png";
 
 class Index extends Component {
   componentDidMount() {
     document.body.classList = "";
     window.addEventListener("scroll", this.scrollNavigation, true);
+    document.getElementById("brandLogo").src = logodark;
   }
 
   // Make sure to remove the DOM listener when the component is unmounted.
@@ -24,6 +26,7 @@ class Index extends Component {
     } else {
       document.getElementById("topnav").classList.remove("nav-sticky");
     }
+
   };
 
   render() {

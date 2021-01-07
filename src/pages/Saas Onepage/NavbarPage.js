@@ -46,7 +46,7 @@ class NavbarPage extends Component {
                 target="_blank"
                 className="btn btn-primary"
               >
-                Buy Now
+                Contact Now
               </Link>
             </div>
             <div className="menu-extras">

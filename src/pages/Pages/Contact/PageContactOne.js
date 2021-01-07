@@ -30,7 +30,7 @@ class PageContactOne extends Component {
         this.state = {
             pathItems: [
                 //id must required
-                {id: 1, name: "Landrick", link: "/index"},
+                {id: 1, name: "Marcos", link: "/index"},
                 {id: 2, name: "Page", link: "#"},
                 {id: 3, name: "Contact", link: "#"},
                 {id: 4, name: "Contact One"},
@@ -100,7 +100,7 @@ class PageContactOne extends Component {
                         <Row className="justify-content-center">
                             <Col lg="12" className="text-center">
                                 <div className="page-next-level">
-                                    <h4 className="title">Contact Us</h4>
+                                    <h4 className="title">Свяжитесь с нами</h4>
                                 </div>
                             </Col>
                         </Row>
@@ -116,16 +116,16 @@ class PageContactOne extends Component {
                                         <i className="uil uil-phone d-block rounded h3 mb-0"></i>
                                     </div>
                                     <div className="content mt-3">
-                                        <h4 className="title font-weight-bold">Phone</h4>
+                                        <h4 className="title font-weight-bold">Телефон</h4>
                                         <p className="text-muted">
-                                            Start working with Landrick that can provide everything
+                                            Сделать телефонный звонок
                                         </p>
                                         <Link
                                             to="#"
                                             onClick={this.callNumber}
                                             className="text-primary"
                                         >
-                                            +152 534-468-854
+                                            ( + 998 ) 93 522 92 99
                                         </Link>
                                     </div>
                                 </Card>
@@ -137,17 +137,17 @@ class PageContactOne extends Component {
                                         <i className="uil uil-envelope d-block rounded h3 mb-0"></i>
                                     </div>
                                     <div className="content mt-3">
-                                        <h4 className="title font-weight-bold">Email</h4>
+                                        <h4 className="title font-weight-bold">Телеграм</h4>
                                         <p className="text-muted">
-                                            Start working with Landrick that can provide everything
+                                            Написать в телеграм
                                         </p>
-                                        <Link
-                                            to="#"
-                                            onClick={this.sendMail}
+                                        <a
+                                            href="https://t.me/ThinkAhead"
+
                                             className="text-primary"
                                         >
-                                            contact@example.com
-                                        </Link>
+                                            @ThinkAhead
+                                        </a>
                                     </div>
                                 </Card>
                             </Col>
@@ -158,20 +158,19 @@ class PageContactOne extends Component {
                                         <i className="uil uil-map-marker d-block rounded h3 mb-0"></i>
                                     </div>
                                     <div className="content mt-3">
-                                        <h4 className="title font-weight-bold">Location</h4>
+                                        <h4 className="title font-weight-bold">Адрес</h4>
                                         <p className="text-muted">
-                                            C/54 Northwest Freeway, Suite 558, <br/>
-                                            Houston, USA 485
+                                            г.Ташкент, Алмазарский район, ул. Зиё 2А
                                         </p>
-                                        <Link to="#" className="video-play-icon h6 text-primary">
-                                            View on Google map
-                                        </Link>
+                                        <a href="#location" className="video-play-icon h6 text-primary">
+                                            Посмотреть на карте Google
+                                        </a>
                                     </div>
                                 </Card>
                             </Col>
                         </Row>
                     </Container>
-
+                    <a name="contact"></a>
                     <Container className="mt-60 mb-0">
                         <Row className="align-items-center">
                             <Col
@@ -181,7 +180,7 @@ class PageContactOne extends Component {
                             >
                                 <Card className="shadow rounded border-0">
                                     <CardBody className="py-5">
-                                        <h4 className="card-title">Get In Touch !</h4>
+                                        <h4 className="card-title">Связаться !</h4>
                                         <div className="custom-form mt-4">
                                             <div id="message"></div>
                                             <Alert
@@ -193,7 +192,7 @@ class PageContactOne extends Component {
                                                     });
                                                 }}
                                             >
-                                                Contact details send successfully.
+                                                Контактные данные отправлены успешно.
                                             </Alert>
                                             <Form
                                                 method="post"
@@ -205,7 +204,7 @@ class PageContactOne extends Component {
                                                     <Col md={6}>
                                                         <FormGroup>
                                                             <Label>
-                                                                Your Name <span className="text-danger">*</span>
+                                                                Ваше имя <span className="text-danger">*</span>
                                                             </Label>
                                                             <div className="position-relative">
                                                                 <i>
@@ -220,7 +219,7 @@ class PageContactOne extends Component {
                                                                 id="name"
                                                                 type="text"
                                                                 className="form-control pl-5"
-                                                                placeholder="First Name :"
+                                                                placeholder="Имя :"
                                                                 required
                                                             />
                                                         </FormGroup>
@@ -228,7 +227,7 @@ class PageContactOne extends Component {
                                                     <Col md={6}>
                                                         <FormGroup className="position-relative">
                                                             <Label>
-                                                                Your Email{" "}
+                                                                Ваш эмаил{" "}
                                                                 <span className="text-danger">*</span>
                                                             </Label>
                                                             <div className="position-relative">
@@ -244,14 +243,14 @@ class PageContactOne extends Component {
                                                                 id="email"
                                                                 type="email"
                                                                 className="form-control pl-5"
-                                                                placeholder="Your email :"
+                                                                placeholder="Эмаил :"
                                                                 required
                                                             />
                                                         </FormGroup>
                                                     </Col>
                                                     <Col md={12}>
                                                         <FormGroup className="position-relative">
-                                                            <Label>Subject</Label>
+                                                            <Label>Ваша тема</Label>
                                                             <div className="position-relative">
                                                                 <i>
                                                                     <FeatherIcon
@@ -264,14 +263,14 @@ class PageContactOne extends Component {
                                                                 name="subject"
                                                                 id="subject"
                                                                 className="form-control pl-5"
-                                                                placeholder="Your subject :"
+                                                                placeholder="Тема :"
                                                                 required
                                                             />
                                                         </FormGroup>
                                                     </Col>
                                                     <Col md={12}>
                                                         <FormGroup className="position-relative">
-                                                            <Label>Comments</Label>
+                                                            <Label>Ваше сообщение</Label>
                                                             <div className="position-relative">
                                                                 <i>
                                                                     <FeatherIcon
@@ -285,7 +284,7 @@ class PageContactOne extends Component {
                                                                 id="comments"
                                                                 rows="4"
                                                                 className="form-control pl-5"
-                                                                placeholder="Your Message :"
+                                                                placeholder="сообщение :"
                                                             ></textarea>
                                                         </FormGroup>
                                                     </Col>
@@ -297,7 +296,7 @@ class PageContactOne extends Component {
                                                             id="submit"
                                                             name="send"
                                                             className="submitBnt btn btn-primary btn-block"
-                                                            value="Send Message"
+                                                            value="Отправить сообщение"
                                                         />
                                                         <div id="simple-msg"></div>
                                                     </Col>
@@ -316,11 +315,11 @@ class PageContactOne extends Component {
                                 </Card>
                             </Col>
                         </Row>
-                    </Container>
 
-                    <Container className="m-0" fluid>
-                        <Row>
-                            <Col xs={12} className="p-0 m-0">
+                    <a name="location"></a>
+
+                        <Row className="p-0 m-0">
+                            <Col xs={12} >
                                 <Card className="map border-0 m-0">
                                     <CardBody className="p-0">
                                         <iframe
@@ -334,9 +333,8 @@ class PageContactOne extends Component {
                                 </Card>
                             </Col>
                         </Row>
+
                     </Container>
-
-
                 </section>
             </React.Fragment>
         );

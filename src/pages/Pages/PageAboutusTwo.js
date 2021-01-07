@@ -15,15 +15,15 @@ import classnames from "classnames";
 
 
 //Import Images
-import logolight from "../../assets/images/logo-light.png";
-import logodark from "../../assets/images/logo-dark.png";
+import logolight from "../../assets/images/logo-marcos-4.png";
+import logodark from "../../assets/images/logo-marcos-20.png";
 import aboutus from "../../assets/images/company/aboutus.jpg";
 import about2 from "../../assets/images/company/about2.png";
-import amazon from "../../assets/images/client/allsport.svg";
-import google from "../../assets/images/client/moboe.svg";
-import lenovo from "../../assets/images/client/artel.svg";
-import paypal from "../../assets/images/client/talim markazi.svg";
-import shopify from "../../assets/images/client/shopify.svg";
+import amazon from "../../assets/images/work/kimyo ins.png";
+import google from "../../assets/images/work/artel.png";
+import lenovo from "../../assets/images/work/allsport.jpg";
+import paypal from "../../assets/images/work/respub.png";
+import shopify from "../../assets/images/work/mobi tech.png";
 import spotify from "../../assets/images/client/spotify.svg";
 
 import work1 from "../../assets/images/work/1.png";
@@ -274,20 +274,13 @@ export default class PageAboutusTwo extends Component {
                   <div className="section-title">
                     <h4 className="title mb-4">Who we are ?</h4>
                     <p className="text-muted">
-                      Start working with{" "}
+                      Занимаемся разработкой программных продуктов с 2017 года, на данный момент под управлением Marcos Soft находится 27 проектов самых разных уровней сложности. Если у Вас есть техническое задание, будем рады с ним ознакомиться и сообщить Вам оценку Вашего проекта. ТЗ можно направить вот сюда
                       <span className="text-primary font-weight-bold">
-                        Landrick
-                      </span>{" "}
-                      that can provide everything you need to generate
-                      awareness, drive traffic, connect. Dummy text is text that
-                      is used in the publishing industry or by web designers to
-                      occupy the space which will later be filled with 'real'
-                      content. This is required when, for example, the final
-                      text is not yet available. Dummy texts have been in use by
-                      typesetters since the 16th century.
+                        {" "}shaxibjam@gmail.com
+                      </span>
                     </p>
                     <Link to="#" className="btn btn-primary mt-3">
-                      Contact us
+                      Связаться с нами
                     </Link>
                   </div>
                 </div>
@@ -318,15 +311,9 @@ export default class PageAboutusTwo extends Component {
             <Row className="align-items-end mb-4 pb-4">
               <Col md={8}>
                 <div className="section-title text-center text-md-left">
-                  <h6 className="text-primary">Services</h6>
-                  <h4 className="title mb-4">What we do ?</h4>
+                  <h4 className="title mb-4">Наша компетенция</h4>
                   <p className="text-muted mb-0 para-desc">
-                    Start working with{" "}
-                    <span className="text-primary font-weight-bold">
-                      Landrick
-                    </span>{" "}
-                    that can provide everything you need to generate awareness,
-                    drive traffic, connect.
+                    Кроме разработки приложений, сайтов и ботов, мы предлагаем услуги по подключению платёжных систем, аудит ваших серверов, доработка существующих приложений и др.
                   </p>
                 </div>
               </Col>
@@ -347,7 +334,7 @@ export default class PageAboutusTwo extends Component {
                       }}
                     >
                       <div className="text-center py-1">
-                        <h6 className="mb-0">Web Developing</h6>
+                        <h6 className="mb-0">Разработка приложений</h6>
                       </div>
                     </NavLink>
                   </NavItem>
@@ -364,7 +351,7 @@ export default class PageAboutusTwo extends Component {
                       }}
                     >
                       <div className="text-center py-1">
-                        <h6 className="mb-0">Database Analysis</h6>
+                        <h6 className="mb-0">Веб разработка</h6>
                       </div>
                     </NavLink>
                   </NavItem>
@@ -381,7 +368,7 @@ export default class PageAboutusTwo extends Component {
                       }}
                     >
                       <div className="text-center py-1">
-                        <h6 className="mb-0">Server Security</h6>
+                        <h6 className="mb-0">Телеграмм бот</h6>
                       </div>
                     </NavLink>
                   </NavItem>
@@ -398,7 +385,7 @@ export default class PageAboutusTwo extends Component {
                       }}
                     >
                       <div className="text-center py-1">
-                        <h6 className="mb-0">Web Designing</h6>
+                        <h6 className="mb-0">Автоматизация бизнеса</h6>
                       </div>
                     </NavLink>
                   </NavItem>
@@ -459,8 +446,8 @@ export default class PageAboutusTwo extends Component {
           <Container>
             {/* Render Section Title */}
             <SectionTitle
-                title="Our Greatest Minds"
-                desc="that can provide everything you need to generate awareness, drive traffic, connect."
+                title="Наша команда"
+                desc="Отличный результат может дать только команда с высоким уровнем взаимопонимания."
             />
 
             <Row className="justify-content-center">

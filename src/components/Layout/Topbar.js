@@ -4,8 +4,6 @@ import { withRouter } from "react-router";
 import {
   Container,
   Form,
-  Modal,
-  ModalBody,
   Dropdown,
   DropdownMenu,
   DropdownToggle,
@@ -25,13 +23,13 @@ class Topbar extends Component {
       dropdownOpenShop: false,
       navLinks: [
         //Note : each child and nested child must have unique id
-        { id: 1, title: "Home", link: "/index-software",
+        { id: 1, title: "Главная", link: "/index-software",
           isMegaMenu: true,
           isOpenSubMenu: false, },
-        { id: 2, title: "Portfolio", link: "/index-portfolio",
+        { id: 2, title: "Портфолио", link: "/index-portfolio",
           isMegaMenu: true,
           isOpenSubMenu: false,},
-        { id: 3, title: "About Us Two", link: "/page-aboutus-two",
+        { id: 3, title: "О нас", link: "/page-aboutus-two",
           isMegaMenu: true,
           isOpenSubMenu: false,},
 
@@ -484,27 +482,25 @@ class Topbar extends Component {
               } else if (this.props.location.pathname === "/index-seo-agency") {
                 return (
                   <div className="buy-button">
-                    <Link
-                      to="//1.envato.market/landrickreactjs"
-                      target="_blank"
+                    <a
+                      href="#contact"
                       className="btn btn-pills btn-primary"
                     >
                       Contact Now
-                    </Link>
+                    </a>
                   </div>
                 );
               } else {
                 return (
                   <div className="buy-button">
-                    <Link
-                      to="//1.envato.market/landrickreactjs"
-                      target="_blank"
+                    <a
+                        href="#contact"
                       rel="noopener noreferrer"
                       id="buyButton"
                       className="btn btn-primary"
                     >
                       Contact Now
-                    </Link>
+                    </a>
                   </div>
                 );
               }
@@ -694,50 +690,18 @@ class Topbar extends Component {
                 )}
               </ul>
               <div className="buy-menu-btn d-none">
-                <Link
-                  to="https://1.envato.market/landrickreactjs"
-                  target="_blank"
+                <a
+                    href="#contact"
                   rel="noopener noreferrer"
                   className="btn btn-primary"
                 >
                   Contact Now
-                </Link>
+                </a>
               </div>
             </div>
           </Container>
         </header>
 
-        <Modal
-          isOpen={this.state.wishlistModal}
-          tabIndex="-1"
-          centered
-          contentClassName="rounded shadow-lg border-0 overflow-hidden"
-          toggle={this.toggleWishlistModal}
-        >
-          <ModalBody className="py-5">
-            <div className="text-center">
-              <div
-                className="icon d-flex align-items-center justify-content-center bg-soft-danger rounded-circle mx-auto"
-                style={{ height: "95px", width: "95px" }}
-              >
-                <h1 className="mb-0">
-                  <i className="uil uil-heart-break align-middle"></i>
-                </h1>
-              </div>
-              <div className="mt-4">
-                <h4>Your wishlist is empty.</h4>
-                <p className="text-muted">
-                  Create your first wishlist request...
-                </p>
-                <div className="mt-4">
-                  <Link to="#" className="btn btn-outline-primary">
-                    + Create new wishlist
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </ModalBody>
-        </Modal>
       </React.Fragment>
     );
   }

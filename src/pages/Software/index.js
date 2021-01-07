@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import Section from "./Section";
 import Features from "./Featuress";
 
@@ -9,55 +9,68 @@ import PageContactOne from "../Pages/Contact/PageContactOne";
 import PagePricing from "../Pages/PagePricing";
 
 class Software extends Component {
-  componentDidMount() {
+    componentDidMount() {
 
-    document.getElementById("top-menu").classList.add("nav-light");
-    document.getElementById("buyButton").className = "btn btn-light";
-    document.getElementById("brandLogo").src = logolight;
-    window.addEventListener("scroll", this.scrollNavigation, true);
-  }
-  // Make sure to remove the DOM listener when the component is unmounted.
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.scrollNavigation, true);
-  }
-
-  scrollNavigation = () => {
-    var doc = document.documentElement;
-    var top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
-    if (top > 80) {
-      document.getElementById("topnav").classList.add("nav-sticky");
-      document.getElementById("buyButton").className = "btn btn-primary";
-      document.getElementById("brandLogo").src = logodark;
-    } else {
-      document.getElementById("topnav").classList.remove("nav-sticky");
-      document.getElementById("buyButton").className = "btn btn-light";
-      document.getElementById("brandLogo").src = logolight;
+        document.getElementById("top-menu").classList.add("nav-light");
+        document.getElementById("buyButton").className = "btn btn-light";
+        document.getElementById("brandLogo").src = logolight;
+        window.addEventListener("scroll", this.scrollNavigation, true);
     }
-  };
-  render() {
-    return (
-      <React.Fragment>
-        {/* render section */}
-        <Section />
-        <section className="section pt-md-0 pt-0 mb-00">
-          {/* Features */}
-          <Features />
 
-          {/* pricing */}
-          <PagePricing />
+    // Make sure to remove the DOM listener when the component is unmounted.
+    componentWillUnmount() {
+        window.removeEventListener("scroll", this.scrollNavigation, true);
+    }
 
-          {/* Reviews */}
-          <Reviews />
+    scrollNavigation = () => {
+        var doc = document.documentElement;
+        var top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            document.getElementById("brandLogo").src = logodark;
+            if (top > 80) {
+                document.getElementById("topnav").classList.add("nav-sticky");
+                document.getElementById("buyButton").className = "btn btn-primary";
+            } else {
+                document.getElementById("topnav").classList.remove("nav-sticky");
+                document.getElementById("buyButton").className = "btn btn-light";
+            }
+        } else {
+            if (top > 80) {
+                document.getElementById("topnav").classList.add("nav-sticky");
+                document.getElementById("buyButton").className = "btn btn-primary";
+                document.getElementById("brandLogo").src = logodark;
+            } else {
+                document.getElementById("topnav").classList.remove("nav-sticky");
+                document.getElementById("buyButton").className = "btn btn-light";
+                document.getElementById("brandLogo").src = logolight;
+            }
+        }
+    };
 
-          <a name="contact"></a>
-          <PageContactOne />
+    render() {
+        return (
+            <React.Fragment>
+                {/* render section */}
+                <Section/>
+                <section className="section pt-md-0 pt-0 mb-00">
+                    {/* Features */}
+                    <Features/>
 
-        </section>
+                    {/* pricing */}
+                    <PagePricing/>
+
+                    {/* Reviews */}
+                    <Reviews/>
+
+                    <a name="contact"></a>
+                    <PageContactOne/>
+
+                </section>
 
 
-      </React.Fragment>
-    );
-  }
+            </React.Fragment>
+        );
+    }
 }
 
 export default Software;

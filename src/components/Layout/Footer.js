@@ -1,21 +1,13 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Container, Row, Col, Form, Input, Label } from "reactstrap";
+import { Container, Row, Col} from "reactstrap";
 
 //Import Icons
 import FeatherIcon from "feather-icons-react";
 
-// import images
-import americanEx from "../../assets/images/payments/american-ex.png";
-import discover from "../../assets/images/payments/discover.png";
-import masterCard from "../../assets/images/payments/master-card.png";
-import paypal from "../../assets/images/payments/paypal.png";
-import visa from "../../assets/images/payments/visa.png";
-// import { FiChevronLeft } from "react-icons/fi";
-
 //Import Images
 import logolight from "../../assets/images/marcos-logo.png";
-import logodark from "../../assets/images/marcoa-logo-dark.png";
+import logodark from "../../assets/images/logo-marcos-20.png";
 
 class Footer extends Component {
   constructor(props) {
@@ -25,11 +17,6 @@ class Footer extends Component {
         { title: "About us", link: "/page-aboutus" },
         { title: "Services", link: "/page-services" },
         { title: "Team", link: "/page-team" },
-        { title: "Pricing", link: "/page-pricing" },
-        { title: "Project", link: "/page-work" },
-        { title: "Careers", link: "/page-jobs" },
-        { title: "Blog", link: "/page-blog" },
-        { title: "Login", link: "/page-cover-login" },
       ],
       grid2: [
         { title: "Terms of Services", link: "/page-terms" },
@@ -44,8 +31,8 @@ class Footer extends Component {
   render() {
     return (
       <React.Fragment>
-        <footer className={this.props.isLight ? "footer bg-light" : "footer footer-border"}>
-          <Container className="mt-0">
+        <footer className={"footer footer-border"}>
+          <Container className="mt-0 mb-0">
             <Row>
               <Col
                 lg="4"
@@ -53,7 +40,7 @@ class Footer extends Component {
                 className="mb-0 mb-md-4 pb-0 pb-md-2"
                 name="footercolumn"
               >
-                <Link to="#" className="logo-footer">
+                <Link to="/" className="logo-footer">
                   <img
                     src={this.props.isLight ? logodark : logolight}
                     height="30%"
@@ -61,55 +48,54 @@ class Footer extends Component {
                   />
                 </Link>
                 <p className={this.props.isLight ? "mt-4 text-muted" : "mt-4"}>
-                  Start working with Landrick that can provide everything you
-                  need to generate awareness, drive traffic, connect.
+                  В наших интересах рациональные решения и довольные клиенты.
                 </p>
                 <ul className="list-unstyled social-icon social mb-0 mt-4">
                   <li className="list-inline-item ml-1">
-                    <Link to="" className="rounded">
+                    <a href="https://www.facebook.com/profile.php?id=100029144765771" className="rounded">
                       <i>
                         <FeatherIcon
                           icon="facebook"
                           className="fea icon-sm fea-social"
                         />
                       </i>
-                    </Link>
+                    </a>
                   </li>
                   <li className="list-inline-item ml-1">
-                    <Link to="" className="rounded">
+                    <a href="https://www.instagram.com/shaxobbekjurayev/" className="rounded">
                       <i>
                         <FeatherIcon
                           icon="instagram"
                           className="fea icon-sm fea-social"
                         />
                       </i>
-                    </Link>
+                    </a>
                   </li>
                   <li className="list-inline-item ml-1">
-                    <Link to="" className="rounded">
+                    <a href="https://twitter.com/shakhobbek" className="rounded">
                       <i>
                         <FeatherIcon
                           icon="twitter"
                           className="fea icon-sm fea-social"
                         />
                       </i>
-                    </Link>
+                    </a>
                   </li>
                   <li className="list-inline-item ml-1">
-                    <Link to="" className="rounded">
+                    <a href="https://www.linkedin.com/in/shakhobbek-juraev-3412061b5/" className="rounded">
                       <i>
                         <FeatherIcon
                           icon="linkedin"
                           className="fea icon-sm fea-social"
                         />
                       </i>
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </Col>
 
               <Col
-                lg="2"
+                lg="4"
                 md="4"
                 xs="12"
                 className="mt-2 mt-sm-0 pt-2 pt-sm-0"
@@ -142,7 +128,7 @@ class Footer extends Component {
               </Col>
 
               <Col
-                lg="3"
+                lg="4"
                 md="4"
                 xs="12"
                 className="mt-2 mt-sm-0 pt-2 pt-sm-0"
@@ -172,77 +158,6 @@ class Footer extends Component {
                     </li>
                   ))}
                 </ul>
-              </Col>
-
-              <Col
-                lg="3"
-                md="4"
-                xs="12"
-                className="mt-2 mt-sm-0 pt-2 pt-sm-0"
-                name="footercolumn"
-              >
-                <h5
-                  className={
-                    this.props.isLight
-                      ? "text-dark footer-head"
-                      : "text-light footer-head"
-                  }
-                >
-                  Newsletter
-                </h5>
-                <p className="mt-2">
-                  Sign up and receive the latest tips via email.
-                </p>
-                <Form>
-                  <Row>
-                    <Col lg="12">
-                      <div
-                        className={
-                          this.props.isLight
-                            ? "foot-subscribe foot-white form-group position-relative"
-                            : "foot-subscribe form-group position-relative"
-                        }
-                      >
-                        <Label
-                          className={this.props.isLight ? "text-muted" : ""}
-                        >
-                          Write your email{" "}
-                          <span className="text-danger">*</span>
-                        </Label>
-                        <i>
-                          <div className="position-relative">
-                            <FeatherIcon
-                              icon="mail"
-                              className="fea icon-sm icons"
-                            />
-                          </div>
-                        </i>
-                        <Input
-                          type="email"
-                          name="email"
-                          id="emailsubscribe"
-                          className={
-                            this.props.isLight
-                              ? "form-control bg-light border pl-5 rounded"
-                              : "form-control pl-5 rounded"
-                          }
-                          placeholder="Your email : "
-                          required
-                        />
-                      </div>
-                    </Col>
-                    <Col lg="12">
-                      <Input
-                        type="submit"
-                        id="submitsubscribefooter"
-                        name="send"
-                        className="btn btn-soft-primary btn-block"
-                        readOnly
-                        value="Subscribe"
-                      />
-                    </Col>
-                  </Row>
-                </Form>
               </Col>
             </Row>
           </Container>

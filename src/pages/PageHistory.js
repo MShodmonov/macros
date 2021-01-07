@@ -6,10 +6,10 @@ import { Card, CardBody, Col, Container, Row } from "reactstrap";
 import FeatherIcon from "feather-icons-react";
 
 // import images
-import blog1 from "../assets/images/blog/punctual.jpg";
-import blog2 from "../assets/images/blog/responsible.jpg";
-import blog3 from "../assets/images/blog/03.jpg";
-import blog4 from "../assets/images/blog/04.jpg";
+import blog1 from "../assets/images/blog/1 support.jpg";
+import blog2 from "../assets/images/blog/2 support.jpg";
+import blog3 from "../assets/images/blog/3 support.jpg";
+import blog4 from "../assets/images/blog/4 support call.jpg";
 
 export default class PageHistory extends Component {
 

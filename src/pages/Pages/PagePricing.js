@@ -40,7 +40,7 @@ class PagePricing extends Component {
     this.state = {
       pathItems: [
         //id must required
-        { id: 1, name: "Landrick", link: "/index" },
+        { id: 1, name: "Marcos", link: "/index" },
         { id: 2, name: "Page", link: "#" },
         { id: 3, name: "Pricing" },
       ],
@@ -89,114 +89,6 @@ class PagePricing extends Component {
             { title: "Техническая поддержка" },
             { title: "Аналитика, рекомендации по развитию" },
             { title: "хостинг на два месяца" },
-          ],
-        },
-      ],
-      pricings1: [
-        {
-          id: 1,
-          title: "Free",
-          price: 0,
-          duration: "mo",
-          buttonText: "Buy Now",
-          btnLink: "",
-          features: [{ title: "Full Access" }, { title: "Source Files" }],
-        },
-        {
-          id: 2,
-          title: "Starter",
-          price: 139,
-          duration: "mo",
-          buttonText: "Get Started",
-          btnLink: "",
-          isActive: true,
-          features: [
-            { title: "Full Access" },
-            { title: "Source Files" },
-            { title: "Free Appointments" },
-          ],
-        },
-        {
-          id: 3,
-          title: "PROFESSIONAL",
-          price: 259,
-          duration: "mo",
-          buttonText: "Try It Now",
-          btnLink: "",
-          features: [
-            { title: "Full Access" },
-            { title: "Source Files" },
-            { title: "1 Domain Free" },
-            { title: "Enhanced Security" },
-          ],
-        },
-        {
-          id: 4,
-          title: "ULTIMATE",
-          price: 379,
-          duration: "mo",
-          buttonText: "Started Now",
-          btnLink: "",
-          features: [
-            { title: "Full Access" },
-            { title: "Enhanced Security" },
-            { title: "Source Files" },
-            { title: "1 Domain Free" },
-            { title: "Free Installment" },
-          ],
-        },
-      ],
-      pricings2: [
-        {
-          id: 1,
-          title: "Free",
-          price: 0,
-          duration: "mo",
-          buttonText: "Buy Now",
-          btnLink: "",
-          features: [{ title: "Full Access" }, { title: "Source Files" }],
-        },
-        {
-          id: 2,
-          title: "Starter",
-          price: 39,
-          duration: "mo",
-          buttonText: "Get Started",
-          btnLink: "",
-          isActive: true,
-          features: [
-            { title: "Full Access" },
-            { title: "Source Files" },
-            { title: "Free Appointments" },
-          ],
-        },
-        {
-          id: 3,
-          title: "PROFESSIONAL",
-          price: 59,
-          duration: "mo",
-          buttonText: "Try It Now",
-          btnLink: "",
-          features: [
-            { title: "Full Access" },
-            { title: "Source Files" },
-            { title: "1 Domain Free" },
-            { title: "Enhanced Security" },
-          ],
-        },
-        {
-          id: 4,
-          title: "ULTIMATE",
-          price: 79,
-          duration: "mo",
-          buttonText: "Started Now",
-          btnLink: "",
-          features: [
-            { title: "Full Access" },
-            { title: "Enhanced Security" },
-            { title: "Source Files" },
-            { title: "1 Domain Free" },
-            { title: "Free Installment" },
           ],
         },
       ],
@@ -292,10 +184,10 @@ class PagePricing extends Component {
       <React.Fragment>
         <section className="section">
           <Container>
-            {/* Render Section Title */}
+
             <SectionTitle
               title="Прайс лист"
-              desc="that can provide everything you need to generate awareness, drive traffic, connect."
+              desc="Приемлемые цены и прозрачная политика ценообразования:"
             />
 
             <Row className="align-items-center">
