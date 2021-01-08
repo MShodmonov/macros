@@ -7,6 +7,7 @@ import logolight from "../../assets/images/logo-marcos-4.png";
 import logodark from "../../assets/images/logo-marcos-20.png";
 import PageContactOne from "../Pages/Contact/PageContactOne";
 import PagePricing from "../Pages/PagePricing";
+import {Card, CardBody, Col, Container, Row} from "reactstrap";
 
 class Software extends Component {
     componentDidMount() {
@@ -65,8 +66,25 @@ class Software extends Component {
                     <a name="contact"></a>
                     <PageContactOne/>
 
-                </section>
 
+                </section>
+                <a name="location"></a>
+
+                <Row>
+                    <Col xs={12}>
+                        <Card className="map border-0 m-0">
+                            <CardBody className="p-0">
+                                <iframe
+                                    title="myFrame"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10722.427359854908!2d69.20805843771048!3d41.352192590779346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8df0e71c5abd%3A0xef96e670416cd3b6!2sRespublika%20ta&#39;lim%20markazi!5e0!3m2!1sen!2s!4v1608710633481!5m2!1sen!2s"
+                                    style={{border: "0"}}
+                                    className="rounded"
+                                    allowFullScreen
+                                ></iframe>
+                            </CardBody>
+                        </Card>
+                    </Col>
+                </Row>
 
             </React.Fragment>
         );

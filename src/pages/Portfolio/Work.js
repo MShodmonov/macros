@@ -7,9 +7,9 @@ import Lightbox from 'react-image-lightbox';
 import '../../../node_modules/react-image-lightbox/style.css';
 
 //Import Images
-import work1 from "../../assets/images/work/AllSportUz copy.jpg";
-import work2 from "../../assets/images/work/artel copy.jpg";
-import work3 from "../../assets/images/work/Intellingvo copy.jpg";
+import work1 from "../../assets/images/work/allsport.jpg";
+import work2 from "../../assets/images/work/ARTEL MUCK.jpg";
+import work3 from "../../assets/images/work/INTELINGVO.jpg";
 import work4 from "../../assets/images/work/LMS copy.jpg";
 import work5 from "../../assets/images/work/mobitech copy.jpg";
 import work6 from "../../assets/images/work/SES copy.jpg";

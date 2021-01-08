@@ -486,7 +486,7 @@ class Topbar extends Component {
                       href="#contact"
                       className="btn btn-pills btn-primary"
                     >
-                      Contact Now
+                      Kонтакты
                     </a>
                   </div>
                 );
@@ -499,7 +499,7 @@ class Topbar extends Component {
                       id="buyButton"
                       className="btn btn-primary"
                     >
-                      Contact Now
+                      Kонтакты
                     </a>
                   </div>
                 );

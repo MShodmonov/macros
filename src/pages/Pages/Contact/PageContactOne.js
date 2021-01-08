@@ -22,6 +22,8 @@ import FeatherIcon from "feather-icons-react";
 
 // import images
 import contact from "../../../assets/images/contact.png";
+import Contact from "../../../components/Shared/Contact";
+import ContactHeader from "../../../components/Shared/ContactHeader";
 
 class PageContactOne extends Component {
     constructor(props) {
@@ -51,7 +53,7 @@ class PageContactOne extends Component {
             message: "the main reason you have received the email is that recently you have filled our contact form. As soon as possible our staff will contact you. Thanks for you attention and patience"
         }
 
-        emailjs.send("service_ucgoxm2", "template_dwnig7o",form,
+        emailjs.send("service_ucgoxm2", "template_dwnig7o", form,
             "user_pv5rluqWnKAVWKpCgo5Dc"
         ).then(respone => {
             this.setState({Contactvisible: true});
@@ -87,90 +89,18 @@ class PageContactOne extends Component {
     }
 
     callNumber() {
-        window.location.href = "tel:+152534-468-854";
+        window.location.href = "tel:+998 93 000 00 00";
     }
 
     render() {
         return (
             <React.Fragment>
 
-                {/* breadcrumb */}
-                <section className="bg-info bg-light d-table w-100 mb-0 mt-5">
-                    <Container>
-                        <Row className="justify-content-center">
-                            <Col lg="12" className="text-center">
-                                <div className="page-next-level">
-                                    <h4 className="title">Свяжитесь с нами</h4>
-                                </div>
-                            </Col>
-                        </Row>
-                    </Container>
-                </section>
+                <ContactHeader/>
 
+                <a name="contact"></a>
                 <section className="section pb-0">
-                    <Container className="mb-5">
-                        <Row>
-                            <Col md={4}>
-                                <Card className="border-0 text-center features feature-clean">
-                                    <div className="icons text-primary text-center mx-auto">
-                                        <i className="uil uil-phone d-block rounded h3 mb-0"></i>
-                                    </div>
-                                    <div className="content mt-3">
-                                        <h4 className="title font-weight-bold">Телефон</h4>
-                                        <p className="text-muted">
-                                            Сделать телефонный звонок
-                                        </p>
-                                        <Link
-                                            to="#"
-                                            onClick={this.callNumber}
-                                            className="text-primary"
-                                        >
-                                            ( + 998 ) 93 522 92 99
-                                        </Link>
-                                    </div>
-                                </Card>
-                            </Col>
-
-                            <Col md={4} className="mt-4 mt-sm-0 pt-2 pt-sm-0">
-                                <Card className="border-0 text-center features feature-clean">
-                                    <div className="icons text-primary text-center mx-auto">
-                                        <i className="uil uil-envelope d-block rounded h3 mb-0"></i>
-                                    </div>
-                                    <div className="content mt-3">
-                                        <h4 className="title font-weight-bold">Телеграм</h4>
-                                        <p className="text-muted">
-                                            Написать в телеграм
-                                        </p>
-                                        <a
-                                            href="https://t.me/ThinkAhead"
-
-                                            className="text-primary"
-                                        >
-                                            @ThinkAhead
-                                        </a>
-                                    </div>
-                                </Card>
-                            </Col>
-
-                            <Col md={4} className="mt-4 mt-sm-0 pt-2 pt-sm-0">
-                                <Card className="border-0 text-center features feature-clean">
-                                    <div className="icons text-primary text-center mx-auto">
-                                        <i className="uil uil-map-marker d-block rounded h3 mb-0"></i>
-                                    </div>
-                                    <div className="content mt-3">
-                                        <h4 className="title font-weight-bold">Адрес</h4>
-                                        <p className="text-muted">
-                                            г.Ташкент, Алмазарский район, ул. Зиё 2А
-                                        </p>
-                                        <a href="#location" className="video-play-icon h6 text-primary">
-                                            Посмотреть на карте Google
-                                        </a>
-                                    </div>
-                                </Card>
-                            </Col>
-                        </Row>
-                    </Container>
-                    <a name="contact"></a>
+                    <Contact/>
                     <Container className="mt-60 mb-0">
                         <Row className="align-items-center">
                             <Col
@@ -316,23 +246,7 @@ class PageContactOne extends Component {
                             </Col>
                         </Row>
 
-                    <a name="location"></a>
 
-                        <Row className="p-0 m-0">
-                            <Col xs={12} >
-                                <Card className="map border-0 m-0">
-                                    <CardBody className="p-0">
-                                        <iframe
-                                            title="myFrame"
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10722.427359854908!2d69.20805843771048!3d41.352192590779346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8df0e71c5abd%3A0xef96e670416cd3b6!2sRespublika%20ta&#39;lim%20markazi!5e0!3m2!1sen!2s!4v1608710633481!5m2!1sen!2s"
-                                            style={{border: "0"}}
-                                            className="rounded"
-                                            allowFullScreen
-                                        ></iframe>
-                                    </CardBody>
-                                </Card>
-                            </Col>
-                        </Row>
 
                     </Container>
                 </section>

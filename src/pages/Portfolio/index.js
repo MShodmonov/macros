@@ -5,6 +5,8 @@ import React, { Component } from "react";
 import Section from "./Section";
 import Work from "./Work";
 import logodark from "../../assets/images/logo-marcos-20.png";
+import ContactHeader from "../../components/Shared/ContactHeader";
+import Contact from "../../components/Shared/Contact";
 
 class Index extends Component {
   componentDidMount() {
@@ -37,6 +39,13 @@ class Index extends Component {
 
         {/* Work  */}
         <Work />
+
+
+        <a name="contact"></a>
+        <ContactHeader />
+        <section className="section pb-0">
+          <Contact/>
+        </section>
       </React.Fragment>
     );
   }

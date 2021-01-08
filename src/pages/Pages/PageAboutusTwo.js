@@ -21,7 +21,7 @@ import aboutus from "../../assets/images/company/aboutus.jpg";
 import about2 from "../../assets/images/company/about2.png";
 import amazon from "../../assets/images/work/kimyo ins.png";
 import google from "../../assets/images/work/artel.png";
-import lenovo from "../../assets/images/work/allsport.jpg";
+import lenovo from "../../assets/images/company/allsport.jpg";
 import paypal from "../../assets/images/work/respub.png";
 import shopify from "../../assets/images/work/mobi tech.png";
 import spotify from "../../assets/images/client/spotify.svg";
@@ -38,6 +38,8 @@ import team4 from "../../assets/images/client/Farrux_manager.jpg";
 import team2 from "../../assets/images/client/02.jpg";
 import team3 from "../../assets/images/client/03.jpg";
 import PageHistory from "../PageHistory";
+import ContactHeader from "../../components/Shared/ContactHeader";
+import Contact from "../../components/Shared/Contact";
 
 export default class PageAboutusTwo extends Component {
   constructor(props) {
@@ -225,13 +227,8 @@ export default class PageAboutusTwo extends Component {
                 <div className="page-next-level title-heading">
                   <h1 className="text-white title-dark"> О нас </h1>
                   <p className="text-white-50 para-desc mb-0 mx-auto">
-                    Start working with Landrick that can provide everything you
-                    need to generate awareness, drive traffic, connect.
+                    Информация о нашей компании и её философии.
                   </p>
-
-                  {/*<br/>*/}
-                  {/*<br/>*/}
-                  {/*<br/>*/}
                 </div>
               </Col>
             </Row>
@@ -459,6 +456,12 @@ export default class PageAboutusTwo extends Component {
             </Row>
           </Container>
 
+        </section>
+
+        <a name="contact"></a>
+        <ContactHeader />
+        <section className="section pb-0">
+          <Contact/>
         </section>
 
       </React.Fragment>

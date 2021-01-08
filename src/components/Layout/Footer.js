@@ -7,23 +7,22 @@ import FeatherIcon from "feather-icons-react";
 
 //Import Images
 import logolight from "../../assets/images/marcos-logo.png";
-import logodark from "../../assets/images/footer-logo.png";
 
 class Footer extends Component {
   constructor(props) {
     super(props);
     this.state = {
       grid1: [
-        { title: "About us", link: "/page-aboutus" },
-        { title: "Services", link: "/page-services" },
-        { title: "Team", link: "/page-team" },
+        { title: "Главная", link: "/index-software" },
+        { title: "Портфолио", link: "/index-portfolio" },
+        { title: "О нас", link: "/page-aboutus-two" },
       ],
       grid2: [
-        { title: "Terms of Services", link: "/page-terms" },
-        { title: "Privacy Policy", link: "/page-privacy" },
-        { title: "Documentation", link: "/documentation" },
-        { title: "Changelog", link: "/changelog" },
-        { title: "Components", link: "/components" },
+        { title: "Respublika Ta`lim Markazi", link: "http://rtmuz.uz/" },
+        { title: "Toshkent Kimyo Texnologiya Instituti", link: "http://tkti.uz/" },
+        { title: "AllSportUz", link: "http://allsportuz.com/" },
+        { title: "Diktantlar", link: "http://diktantlar.uz/" },
+        { title: "Mobitech", link: "http://mobitech.uz/" },
       ],
     };
   }
@@ -108,7 +107,7 @@ class Footer extends Component {
                       : "text-light footer-head"
                   }
                 >
-                  Company
+                  Marcos Soft
                 </h5>
                 <ul className="list-unstyled footer-list mt-4">
                   {this.state.grid1.map((grid, key) => (
@@ -141,20 +140,20 @@ class Footer extends Component {
                       : "text-light footer-head"
                   }
                 >
-                  Usefull Links
+                  Полезные ссылки
                 </h5>
                 <ul className="list-unstyled footer-list mt-4">
                   {this.state.grid2.map((grid, key) => (
                     <li key={key}>
-                      <Link
-                        to={grid.link}
+                      <a
+                        href={grid.link}
                         className={
                           this.props.isLight ? "text-muted" : "text-foot"
                         }
                       >
                         <i className="mdi mdi-chevron-right mr-1"></i>
                         {grid.title}
-                      </Link>
+                      </a>
                     </li>
                   ))}
                 </ul>

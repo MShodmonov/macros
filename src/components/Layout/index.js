@@ -1,7 +1,6 @@
 import React, {Component, Suspense} from "react";
 import {withRouter} from "react-router-dom";
 
-// Scroll up button
 import ScrollUpButton from "react-scroll-up-button";
 
 
@@ -43,13 +42,12 @@ class Layout extends Component {
                 <Suspense fallback={this.Loader()}>
                     <Topbar/>
                     {this.props.children}
-                    <Footer/>;
+                    <Footer/>{""}
 
                     <ScrollUpButton
                         ContainerClassName="classForContainer"
                         style={{height: 36, width: 36}}
-                        TransitionClassName="classForTransition"
-                    >
+                        TransitionClassName="classForTransition">
                         <CustomDot/>
                     </ScrollUpButton>
                     {/* </div> */}

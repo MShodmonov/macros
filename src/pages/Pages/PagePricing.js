@@ -48,7 +48,7 @@ class PagePricing extends Component {
         {
           id: 1,
           title: "Телеграмм бот",
-          price: "от 500 000 сум",
+          price: "от 50$",
           duration: "",
           buttonText: "Заказать сейчас",
           btnLink: "",
@@ -63,7 +63,7 @@ class PagePricing extends Component {
         {
           id: 2,
           title: "Веб-сайт",
-          price: "от 1 500 000 сум",
+          price: "от 150$",
           duration: "",
           buttonText: "Заказать сейчас",
           btnLink: "",
@@ -79,7 +79,7 @@ class PagePricing extends Component {
         {
           id: 3,
           title: "Приложения",
-          price: "от 3 000 000 сум",
+          price: "от 300$",
           duration: "",
           buttonText: "Заказать сейчас",
           btnLink: "",
